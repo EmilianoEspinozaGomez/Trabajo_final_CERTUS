@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<title>Document</title>
+</head>
+<body>
+<div class="toast-wrapper mx-auto py-0 fixed-top" role="status" aria-live="polite">
+	<form action="contacto.html" method="post">
+		<div class="container my-custom-container">			
+			<header>
+				<h1 style="font-size: 2em; color:blue">Contáctenos</h1>
+				<hr>
+			</header>
+		    <div class="row flex">
+		        <div class="col s12 m6 l3">
+		        	<label for="txtNombre">Nombre del usuario:</label>
+					<input type="text" name="txtNombre" id="txtNombre" maxlength=50>            
+        		</div>
+        		<div class="col s12 m6 l3">
+		        	<label for="txtApellidoPat">Apellido Paterno:</label>
+					<input type="text" name="txtApellidoPat" id="txtApellidoPat" maxlength=50>            
+        		</div>
+        		<div class="col s12 m6 l3">
+		        	<label for="txtApellidoMat">Apellido Materno:</label>
+					<input type="text" name="txtApellidoMat" id="txtApellidoMat" maxlength=50>            
+        		</div>
+     		</div>
+
+     		<div class="row flex">
+		        <div class="col s6">
+		        	<label for="txtCorreo">Correo electrónico:</label>
+					<input type="email" multiple name="txtCorreo" id="txtCorreo" maxlength=80 value="default@smartek.pe" requerid>
+        		</div>
+        		<div class="col s12 m6 l3">
+		        	<label for="txtMovil">N° de Móvil:</label>
+					<input type="text" name="txtMovil" id="txtMovil" maxlength=50>            
+        		</div>
+        		<div class="col s12 m6 l3">
+		        	<label for="txtDireccion">Direción Domiciliaria:</label>
+					<input type="text" name="txtDireccion" id="txtDireccion" maxlength=50>            
+        		</div>
+     		</div>
+
+     		<div class="row flex">
+		        <div class="col s6">
+
+		        	<!-- Selección de valor -->
+		        	<label for="txtAsunto">Seleccione el asunto:</label>
+		        	<select name="txtAsunto" id="txtAsunto" requerid>
+		        		<option value="">Seleccione una opción:</option>
+		        		<option value="001">Comprar un libro</option>
+		        		<option value="002">Consulta sobre disponibilidad</option>
+		        	</select>					
+        		</div>
+        		<div>
+        			<label for="txtDetalle">Ingresar el mensaje</label>
+        			<textarea name="txtDetalle" id="txtDetalle" cols="40" rows="10"></textarea>        			
+        		</div>
+     		</div>
+     		<div class="row flex">
+     			<button name="button">Enviar ...</button>
+     		</div>
+     		<div class="row flex">     			
+     			<a href="index.html">Regresar a la Página principal</a>
+     		</div>
+		</div>		
+	</form>
+	</div>		
+</body>
+</html>

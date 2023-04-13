@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+    
+
+	<title>Catálogo de Libros</title>
+</head>
+<body>
+
+    <!-- Encabezado -->
+	<header>
+		<h1 style="font-size: 2em; color:white">Smartek - Publicaciones</h1>
+		<h2>Libros de Especialidad</h2>
+	</header>
+
+	
+	<nav>
+		<ul>
+			<!-- Item de lista -->
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="">Quiénes Somos</a></li>
+			<li><a href="contacto.html">Contáctenos</a></li>
+		</ul>
+        <form class="d-flex">
+            <button type="button" class="btn btn-sucess" data-bs-toggle="modal" data-bs-target="#ventanaCarrito" style="position: absolute; margin: 13px; right: 5%">Mis pedidos</button>
+        </form>        
+	</nav>
+	
+    <!-- Ventana de Carrito -->
+    <div id="ventanaCarrito" class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Carrito de Compras</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Su carrito está actualmente vacío.</p>                    
+                </div>
+                <div class="modal-footer">
+                    <button id="limpiar" type="button" class="btn btn-secondary">Limpiar</button>
+                    <br>
+                    <button type="button" class="btn btn-primary">Finalizar compra</button>
+                </div>
+            </div>            
+        </div>
+    </div>
+
+	<!-- Parte principal -->
+	<main>
+		<!-- Sección de catálogos -->
+		<hr>
+
+		<div class="container">
+		<section id="catalogo" class="row marg-bottom-none">
+    
+            <article class="col s12 m6 l3 public">
+                <a href="/libro/ingenieria/libro-de-ingenieria-de-software"></a>
+                <div class="product-content">
+                    <picture>
+                        <img src='img/libro_IS.jpg' class="responsive-img">
+                    </picture>                        
+                    <h3>Libro de Ingeniería de Software - Un enfoque práctico</h3>
+                    <p>S/ 124.00</p>
+                    <p>S/ 225.00 - 45%</p>					
+                </div>
+                <button class="btn btn-sucess" type="button">Agregar</button>
+            </article>                
+        
+            <article class="col s12 m6 l3 public">
+                <a href="/libro/ingenieria/libro-de-programacion-base-de-datos"></a>
+                <div class="product-content">
+                    <picture>
+                        <img src='img/Mysql.jpg' class="responsive-img">
+                    </picture>                                               
+                    <h3>Programación de Base de Datos con MySQL y PHP</h3>
+                    <p>S/ 117.00</p>
+                    <p>S/ 180.00 - 35%</p>					
+                </div>
+                <button class="btn btn-sucess" type="button">Agregar</button>
+            </article>                
+        
+            <article class="col s12 m6 l3 public">
+                <a href="/libro/ingenieria/libro-de-diseño-base-datos"></a>
+                <div class="product-content">
+                    <picture>
+                        <img src='img/diseño_bd.jpg' class="responsive-img">
+                    </picture>                                                
+                    <h3>Diseño de Base de Datos - Un enfoque práctico</h3>
+                    <p>S/ 165.00</p>
+                    <p>S/ 300.00 - 45%</p>					
+                </div>
+                <button class="btn btn-sucess" type="button">Agregar</button>                
+            </article>                
+        
+            <article class="col s12 m6 l3 public">
+                <a href="/libro/ingenieria/libro-de-gestion-base-datos"></a>
+                <div class="product-content">
+                    <picture>
+                        <img src='img/gestion_bd.jpg' class="responsive-img">
+                    </picture>                                                
+                    <h3>Gestión de Base de Datos con SQL</h3>
+                    <p>S/ 179.00</p>
+                    <p>S/ 325.00 - 45%</p>					
+                </div>
+                <button class="btn btn-sucess" type="button">Agregar</button>
+            </article>        
+
+            <article class="col s12 m6 l3 public">
+                <a href="/libro/ingenieria/libro-de-sistemas-operativos"></a>
+                <div class="product-content">
+                    <picture>
+                        <img src='img/so.jpg' class="responsive-img">                            
+                    </picture>                    
+                    <h3>Sistemas Operativos</h3>
+                    <p>S/ 113.00</p>
+                    <p>S/ 205.00 - 45%</p>					
+                </div>
+                <button class="btn btn-sucess" type="button">Agregar</button>                
+            </article>
+
+            <article class="col s12 m6 l3 notice">
+                <a href="/libro/ingenieria/libro-de-programacion-con-python"></a>
+                <div class="product-content">
+                    <picture>
+                        <img src='img/Python.jpg' class="responsive-img">                                
+                    </picture>                    
+                    <h3>Programación con Python</h3>
+                    <p>S/ 125.00</p>
+                    <p>S/ 62.00 - 45%</p>					
+                </div>
+                <button class="btn btn-sucess" type="button">Agregar</button>
+            </article>
+  </section>
+</div>
+</main>
+	<!-- Cargar funciones de Bootstrap --> 
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- JavScrip personalizado --> 
+    <script src="js/js_creado.js"></script>
+
+</body>
+</html>

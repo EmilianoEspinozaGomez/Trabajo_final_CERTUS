@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>LOGIN SMARTEK</title>
+	<link rel="stylesheet" href="login.css">
+	<!-- https://www.youtube.com/watch?v=ErCIMNNfYs8 -->
+
+</head>
+<body>
+	<div class="container">
+		<div class="form-box">
+			<div class="button-box">
+				<div id="elegir"></div>
+				<button type="button" class="toggle-btn" onclick="login()">Iniciar sesión</button>
+				<button type="button" class="toggle-btn" onclick="registrar()">Registrar</button>
+			</div>
+			<div class="redes-sociales">
+				<img src="img/so.jpg" alt="libro">
+			</div>
+			<form id="login" class="input-group">
+				<input type="text" class="input-field" placeholder="Nombre de usuario" required>
+				<input type="password" class="input-field" placeholder="Contraseña" required>
+				<input type="checkbox" class="check-box"><span>Recordar contraseña</span>
+				<button type="submit" class="submit-btn">Acceder</button>
+			</form>
+			<form id="registrar" class="input-group">
+				<input type="text" class="input-field" placeholder="Nombre de usuario" required>
+				<input type="email" class="input-field" placeholder="Correo" required>
+				<input type="password" class="input-field" placeholder="Contraseña" required>
+				<input type="checkbox" class="check-box"><span>Acepto los términos y Condicionjes</span>
+				<button type="submit" class="submit-btn">Registrar</button>
+			</form>
+		</div>		
+	</div>
+
+	<script>
+		var x = document.getElementById("login");
+		var y = document.getElementById("registrar");
+		var z = document.getElementById("elegir");
+
+		function login(){
+			x.style.left = "50px";
+			y.style.left = "450px";
+			z.style.left = "0px";
+		}
+
+		function registrar(){
+			x.style.left = "-400px";
+			y.style.left = "50px";
+			z.style.left = "120px";	
+		}
+	</script>
+	
+</body>
+</html>
